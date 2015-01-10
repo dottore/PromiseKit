@@ -8,6 +8,8 @@
 
 @interface CBCentralManager (PromiseKit)
 
-- (PMKPromise *)scanAllPeripherals;
+- (PMKPromise *)promiseForPeripheralsWithServices:(NSArray *)services
+                                          options:(NSDictionary *)options
+                                          timeout:(NSTimeInterval)timer;
 
 @end
